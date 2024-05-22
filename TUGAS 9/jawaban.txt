@@ -11,4 +11,13 @@ insert into user(id,name,email,password) VALUES ("1","ROMUAL TIO","Romualtio06@g
 insert into user(id,name,email,password) VALUES ("2","jane doe","janedoe@gmail.com","jenita1234"); 
 insert into categories(name) VALUES ("gadged"),("cloth"),("man"),("woman"),("brandad"); 
 insert into item(name,description,price,stock,categorie_id) VALUES ("Sumsang b50", " hape keren dari merek sumsang","4000000","100","1"); 
-insert into item(name,description,price,stock,categorie_id) VALUES ("Uniklooh","baju keren dari brand ternama","500000","50","2"); 
+insert into item(name,description,price,stock,categorie_id) VALUES ("Uniklooh","baju keren dari brand ternama","500000","50","2");
+insert into item(name,description,price,stock,categorie_id) VALUES ("IMHO Watch"," jam tangan anak yang jujur bangeta","2000000","10","1"); 
+
+4 A.
+SELECT name FROM `categories`; 
+B.1.SELECT * FROM 'item'WHERE price >1000000 
+2.SELECT * FROM 'item'WHERE name LIKE 'sang'
+C.select item.*,categogries.*from item INNER join ctegories on item.categorie_id=categories.id
+
+5.UPDATE item SET price=2500000 WHERE id=1; 
