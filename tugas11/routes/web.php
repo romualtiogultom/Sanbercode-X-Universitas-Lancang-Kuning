@@ -18,12 +18,28 @@ use App\Http\Controllers\Authcontroller;
 |
 */
 
-Route::get('/', [Homecontroller::class ,'index']);
+Route::get('/master', [Homecontroller::class ,'index']);
 
 
 Route::get('/register',[Authcontroller::class ,'form']);
 
-Route::post('\welcome',[Authcontroller::class,'store']);
+Route::post('/',[Authcontroller::class,'index']);
+
+Route::get('/data-tables',function(){
+    return view('pages.data-tables');
+});
+
+
+Route::get('/master',function(){
+    return view('layouts.master');
+});
+
+Route::get('/tables',function(){
+    return view('pages.tables');
+});
+
+
+
 
 
 
