@@ -18,7 +18,7 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  @include('partials.nav')
+  @include('partial.nav')
 
   <!-- /.navbar -->
 
@@ -31,7 +31,7 @@
     </a>
 
     <!-- Sidebar -->
-    @include('partials.Sidebar')
+    @include('partial.Sidebar')
     <!-- /.sidebar -->
   </aside>
 
